@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    // "customConditions": ["development"],
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "exactOptionalPropertyTypes": true,
+    "lib": ["es2022"],
+    "module": "Node16",
+    "skipLibCheck": false,
+    "strict": true,
+    "target": "ES2019"
+  },
+  "exclude": ["coverage/", "node_modules/", "example.js"],
+  "include": ["**/*.js", "lib/index.d.ts"]
+}

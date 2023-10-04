@@ -1,0 +1,43 @@
+{
+  "name": "remark-luogu-flavor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build --clean && tsc --build",
+    "prepack": "pnpm build"
+  },
+  "exports": {
+    "development": "./lib/index.js",
+    "default": "./index.js"
+  },
+  "keywords": [],
+  "author": "Imken Luo <me@imken.moe>",
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "@types/mdast": "^4.0.1",
+    "@types/node": "^20.8.2",
+    "rehype-sanitize": "^6.0.0",
+    "rehype-stringify": "^10.0.0",
+    "remark": "^15.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "typescript": "^5.2.2",
+    "unified": "^11.0.3",
+    "vfile": "^6.0.1"
+  },
+  "dependencies": {
+    "mdast-util-gfm-autolink-literal": "^2.0.0",
+    "mdast-util-gfm-footnote": "^2.0.0",
+    "mdast-util-gfm-strikethrough": "^2.0.0",
+    "mdast-util-gfm-table": "^2.0.0",
+    "micromark-extension-gfm-autolink-literal": "^2.0.0",
+    "micromark-extension-gfm-footnote": "^2.0.0",
+    "micromark-extension-gfm-strikethrough": "^2.0.0",
+    "micromark-extension-gfm-table": "^2.0.0",
+    "unist-util-visit": "^5.0.0"
+  }
+}
