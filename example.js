@@ -9,10 +9,12 @@ import remarkLuoguFlavor from "./lib/index.js";
 const buffer = fs.readFileSync("example.md");
 
 const file = await unified()
-  .use(remarkLuoguFlavor)
+  .use(remarkLuoguFlavor, {
+    userLinkPointToLuogu: false,
+  })
   .use(remarkParse)
   .use(rehypeStringify)
   .use(remarkRehype)
   .process(buffer);
 
-console.log((file));
+console.log(String(file));

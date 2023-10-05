@@ -1,4 +1,4 @@
 node_modules/
-index.d.ts
+*.d.ts
 !lib/index.d.ts
 *.tgz
